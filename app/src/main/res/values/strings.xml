@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Persistance Storage</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="favourite_part_of_day">Favourite Part Of Day</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="nothing">Nothing</string>
+</resources>

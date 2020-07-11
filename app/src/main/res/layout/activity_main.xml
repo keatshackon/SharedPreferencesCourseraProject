@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/name"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/address"/>
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/phone_number"/>
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/email"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textFavourite"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/favourite_part_of_day"/>
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdbM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:checked="true"
+            android:text="@string/morning"
+            android:layout_weight="0"
+            android:onClick="onClick"/>
+
+        <RadioButton
+            android:id="@+id/rdbA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="0"
+            android:text="@string/afternoon"
+            android:checked="false"
+            android:onClick="onClick"/>
+
+        <RadioButton
+            android:id="@+id/rdbE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="0"
+            android:text="@string/evening"
+            android:checked="false"
+            android:onClick="onClick"/>
+
+        <RadioButton
+            android:id="@+id/rdbN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="0"
+            android:text="@string/night"
+            android:checked="false"
+            android:onClick="onClick"/>
+
+    </RadioGroup>
+
+</TableLayout>
